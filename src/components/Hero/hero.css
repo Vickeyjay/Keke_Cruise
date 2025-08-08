@@ -1,0 +1,187 @@
+.hero-bg {
+    background-color: #0D0D0D;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 28px;
+}
+
+.hero-bg > .text-container {
+    display: flex;
+    margin-top: 13%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.hero-bg > .text-container > .main-text {
+    font-size: 4vw;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 100%;
+}
+
+.hero-bg > .text-container > .sub-text {
+    font-size: 1.6vw;
+    color: #B3B3B3;
+}
+
+
+
+.text-container > .cta-btn-container > button {
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(#FEAE00, #CB8B00);
+    padding: 13px 21px;
+    border-radius: 50px;
+    color: #1F1F1F;
+    font-weight: 500;
+}
+
+
+.text-container> .cta-btn-container > button > a{
+    color: #1F1F1F;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+} 
+
+
+/* ------- Carousel Slider --------*/
+
+
+.slider {
+    height: 400px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    overflow: hidden;
+    margin-top: 2%;
+}
+
+.slide-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: start;
+    padding: 14.32px;
+    perspective: 100px;
+}
+
+img {
+    width: 100%;
+    transition: transform 1s;
+    border-radius: 14.32px;
+}
+
+img:hover {
+    transform: translateZ(15px);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.slide-track {
+  animation-play-state: running;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+/* ----------- MOBILE DESIGN ------------ */
+
+@media (max-width: 768px) {
+
+
+    .hero-bg > .text-container {
+        display: flex;
+        margin-top: 40%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 28px;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .hero-bg > .text-container > .main-text {
+        font-size: 39.51px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 51.58px;
+    }
+
+    .hero-bg > .text-container > .sub-text {
+        font-size: 14px;
+        color: #B3B3B3;
+        line-height: 24px;
+    }
+
+
+  .slide {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 3%;
+  }
+
+    .slide > img {
+    width: 140px;
+    transition: transform 1s;
+    border-radius: 14.32px;
+}
+  
+
+  .slide-track {
+    width: calc(180px * 16);
+    animation: scroll 40s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-180px * 8));
+    }
+  }
+}

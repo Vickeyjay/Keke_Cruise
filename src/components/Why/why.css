@@ -1,0 +1,206 @@
+.why-container {
+    background-color: #FFFDFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 155px 110.8px;
+    gap: 82px;
+}
+
+.why-container >.text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.why-container >.text-container > .main-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.why-container >.text-container > .sub-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #464646;
+}
+
+
+
+/*-------------- CARD STYLING ------------*/
+
+.why-container > .why-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 100px;
+}
+
+.why-card-container > .why-cards {
+    width: 386.999991184454px;
+    height: auto;
+    border-radius: 20px;
+    padding: 29.19px 31.49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s ease;
+}
+
+.why-cards:hover {
+  transform: scale(1.03) rotate(0deg);
+  box-shadow: 0 16px 40px rgba(254, 174, 0, 0.3);
+  transition: .3s ease;
+}
+
+.why-card-container > .why-cards > .why-icon {
+    width: 84.90541234418492px;
+    height: 84.90541234418492px;
+}
+
+.why-card-container > .why-cards > .why-icon > img {
+    width: 100%;
+    height: 100%;
+}
+
+.why-card-container > .why-cards > .why-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-text-container > .why-main-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.why-text-container > .why-sub-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+
+.bg-dark {
+    background-color: #1D1D1D;
+}
+
+.bg-dark  .why-main-text {
+    color: #FFFFFF;
+}
+
+.bg-dark  .why-sub-text {
+    color: #FFFFFFCC;
+}
+
+.bg-gold {
+    background-color: #FFF7E4;
+    color: #000000;
+}
+
+.rotate-left {
+  transform: rotate(-10deg);
+}
+
+.rotate-right {
+  transform: rotate(10deg);
+} 
+
+
+
+/* <---------- Mobile Responsible ------------> */
+
+/* @media (max-width: 768px) {
+
+    .why-container {
+        padding: 50px 10px;
+    }
+
+    .why-container >.text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .why-container >.text-container > .main-text {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1E1E1E;
+    }
+
+    .why-container >.text-container > .sub-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #464646;
+    }
+
+    .why-container > .why-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .why-card-container > .why-cards {
+        width: 325.999991184454px;
+        height: auto;
+        border-radius: 20px;
+        padding: 29.19px 31.49px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: .3s ease;
+    }
+} */
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .why-container {
+    padding: 90px 0px;
+    overflow-x: hidden; /* prevent horizontal scroll on container itself */
+  }
+
+  .why-container > .text-container > .main-text {
+    font-size: 24px;
+  }
+
+  .why-container > .text-container > .sub-text {
+    font-size: 16px;
+  }
+
+  .why-container > .why-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    width: 100%;
+    padding: 30px;
+    height: max-content;
+    box-sizing: border-box;
+  }
+
+  .why-card-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .why-card-container > .why-cards {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    width: auto;
+    box-sizing: border-box;
+  }
+}
+

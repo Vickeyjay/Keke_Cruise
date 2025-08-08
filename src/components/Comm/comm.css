@@ -1,0 +1,145 @@
+.bg-container {
+    height: 713px;
+    padding: 165px 122px 50px 122px;
+}
+
+.bg-container > .image-bg {
+    background: url("./bgrnd.png");
+    height: 100%;
+    background-color: #E59D00;
+    position: relative;
+    border-radius: 30px;
+}
+
+.image-bg > .content-container {
+    height: 100%;
+    width: 100%;
+    background-color: #e59c00ce;
+    position: absolute;
+    top: 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+}
+
+
+.content-container > .img-container {
+    width: 50%;
+    height: 650.6666870117188px;
+    /* background-color: #121212; */
+    position: relative;
+}
+
+.img-container > img {
+    width: 70%;
+    height: 124%;
+    object-fit: cover;
+    margin: 0;
+    position: absolute;
+    top: -35.7%;
+    left: 0;
+
+}
+
+.content-container > .texts-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
+}
+
+.content-container > .texts-container > .com-main-text {
+    font-size: 60px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.content-container > .texts-container > .com-sub-text {
+    font-size: 30px;
+    font-weight: 400;
+    color: #F0F0F0;
+}
+
+.content-container > .texts-container > .com-btn-container > button  {
+    border: none;
+    padding: 15px 25px 20px 25px;
+    display: inline-block;
+    border-radius: 46px;
+    font-weight: 500;
+    background-color: #FDFDFD;
+    font-size: 20px;
+    color: #121212;
+}
+
+.content-container > .texts-container > .com-btn-container > button:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+
+
+
+/* <--------------- Mobile Responsiveness -----------------> */
+
+
+@media (max-width: 768px) {
+  .bg-container {
+    margin-top: -25%;
+    height: 90vh;
+    padding: 100px 20px 100px 20px;
+  }
+
+  .image-bg {
+    height: 100%;
+  }
+
+  .image-bg > .content-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    padding: 50px 20px 0px 0px ;
+  }
+
+  .content-container > .texts-container {
+    padding: 0px 20px;
+    width: 100%;
+    align-items: start;
+    text-align: start;
+  }
+
+  .content-container > .texts-container > .com-main-text {
+    font-size: 26px;
+  }
+
+  .content-container > .texts-container > .com-sub-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .content-container > .texts-container > .com-btn-container > button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .content-container > .img-container {
+    width: 100%;
+    height: 66%;
+    position: relative;
+    display: flex;
+    justify-content: start;
+  }
+
+  .img-container > img {
+    position: static;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+}

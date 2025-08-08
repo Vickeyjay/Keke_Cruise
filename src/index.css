@@ -1,0 +1,20 @@
+* {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  overflow-x: hidden;
+}
+
+
+/* -------------------- UTILITY CLASSES ------------------- */
+
+a {
+    text-decoration: none;
+}
+
+

@@ -11,7 +11,7 @@
 .curve-navbar {
     background-color: #22222273;
     backdrop-filter: blur(100px);
-    padding: 20px 40px;
+    padding: 20px 30px 20px 10px;
     width: 90%;
     border-radius: 50px;
     display: flex;
@@ -20,7 +20,8 @@
 }
 
 .image-container > .logo > a > img {
-    height: 40px;
+    height: 60px;
+    width: 90px;
     border-radius: 0%;
 }
 
@@ -81,11 +82,12 @@
      
     .curve-navbar {
         height: 60px;
-        padding: 20px 20px 20px 28px ;
+        padding: 20px 20px 20px 10px ;
     }
 
     .image-container > .logo > a > img {
-        height: 28px;
+        height: 32px;
+        width: auto;
     }
 
     .curve-navbar > .nav-links {

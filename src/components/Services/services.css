@@ -134,4 +134,16 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    .cards > .card-main-text {
+    font-size: 4.8vw;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+    .cards > .card-sub-text {
+        font-size: 15px;
+        font-weight: 400;
+        color: #161616E5;
+    }
 }

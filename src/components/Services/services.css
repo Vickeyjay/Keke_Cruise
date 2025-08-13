@@ -134,10 +134,22 @@
         flex-direction: column;
         gap: 20px;
     }
+     .cards-container > .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 387px;
+    height: max-content;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 24px;
+    transition: .3s ease; 
+    flex-wrap: wrap;
+}
 
     .cards > .card-main-text {
-    font-size: 4.8vw;
-    font-weight: 600;
+    font-size: 3.8vw;
+    font-weight: 500;
     color: #1E1E1E;
 }
 

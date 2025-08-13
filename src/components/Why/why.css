@@ -110,63 +110,12 @@
 
 
 
-/* <---------- Mobile Responsible ------------> */
-
-/* @media (max-width: 768px) {
-
-    .why-container {
-        padding: 50px 10px;
-    }
-
-    .why-container >.text-container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-    }
-
-    .why-container >.text-container > .main-text {
-        font-size: 24px;
-        font-weight: 600;
-        color: #1E1E1E;
-    }
-
-    .why-container >.text-container > .sub-text {
-        font-size: 16px;
-        font-weight: 400;
-        color: #464646;
-    }
-
-    .why-container > .why-card-container {
-        display: flex;
-        flex-direction: column;
-        gap: 70px;
-        width: auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .why-card-container > .why-cards {
-        width: 325.999991184454px;
-        height: auto;
-        border-radius: 20px;
-        padding: 29.19px 31.49px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: .3s ease;
-    }
-} */
-
-
-
-
 
 
 @media (max-width: 768px) {
   .why-container {
-    padding: 90px 0px;
-    overflow-x: hidden; /* prevent horizontal scroll on container itself */
+    padding: 70px 0px;
+    overflow-x: hidden;
   }
 
   .why-container > .text-container > .main-text {
@@ -188,7 +137,7 @@
     padding-bottom: 10px;
     width: 100%;
     padding: 30px;
-    height: max-content;
+    height: 40vh;
     box-sizing: border-box;
   }
 
@@ -201,6 +150,7 @@
     scroll-snap-align: start;
     width: auto;
     box-sizing: border-box;
+    height: auto;
   }
 }
 

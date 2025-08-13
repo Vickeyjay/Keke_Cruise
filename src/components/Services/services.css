@@ -138,7 +138,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 387px;
+    width: auto;
     height: max-content;
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -148,7 +148,7 @@
 }
 
     .cards > .card-main-text {
-    font-size: 3.8vw;
+    font-size: 4vw;
     font-weight: 500;
     color: #1E1E1E;
 }

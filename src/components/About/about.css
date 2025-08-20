@@ -11,8 +11,8 @@
     width: 100%;
     display: flex;
     width: 90%;
-    /* height:636px; */
     height: 437.34783935546875px;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -59,12 +59,12 @@
 
 .img-container {
     width: 50%;
-    height: 437.34783935546875px;
+    height: 50vh;
 }
 
 .img-container > span > img {
     width: 100%;
-    height: 70%;
+    height: 100%;
     object-fit: cover;
 }
 
